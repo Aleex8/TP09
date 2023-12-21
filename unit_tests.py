@@ -161,6 +161,14 @@ class FractionTestCase(unittest.TestCase):
         Fraction_58 = Fraction(-8, 4)
         self.assertFalse(Fraction_58.is_proper())
 
+    def test_is_zero(self):
+        Fraction_59 = Fraction(0, 1)
+        self.assertTrue(Fraction_59.is_zero())
+
+    def test_is_unit(self):
+        Fraction_60 = Fraction(1, 2)
+        self.assertTrue(Fraction_60.is_unit())
+
 
 
 
